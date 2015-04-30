@@ -102,7 +102,7 @@ public class BloomFilter {
         return (int)(h % bits);
     }
 
-    // djb2
+
     public int hash4(String str){
         long hash = 5381;
         int c;
@@ -147,7 +147,7 @@ public class BloomFilter {
         return (int)(Math.abs(hash) % bits);
     }
 
-    // RS hash
+
     public int hash8(String str){
         int b = 378551;
         int a = 63689;
